@@ -36,5 +36,8 @@ jobs:
       - name: Installing Surge
         run: npm install -g surge
         
+      - name: Creating Build
+        run: yarn build
+        
       - name: Deploy Surge
         run: npx surge ./build bt-2020.surge.sh --token ${{ secrets.SURGE_TOKEN }}
