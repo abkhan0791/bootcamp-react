@@ -31,7 +31,7 @@ jobs:
       - name: GitHub Action for Yarn
         uses: Borales/actions-yarn@v2.3.0
         with:
-          cmd: Install
+          cmd: install
               
       - name: Installing Surge
         run: npm install --global surge
